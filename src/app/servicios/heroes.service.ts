@@ -62,7 +62,7 @@ export class HeroesService {
     getHeroes(): Heroe[] {
         return this.heroes;
     }
-    getHeroe(idx: string) {
+    getHeroe(idx: any) {
         return this.heroes[idx];
     }
 }

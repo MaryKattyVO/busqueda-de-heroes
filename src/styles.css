@@ -5,6 +5,9 @@ body {
 .with-button {
   width: 100% !important;
 }
+.box-img {
+  width: 20% !important;
+}
 /* ANIMACIONES */
 .animated {
     -webkit-animation-duration: 1s;

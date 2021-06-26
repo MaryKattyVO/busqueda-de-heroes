@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router'; 
 import { HeroesService } from 'src/app/servicios/heroes.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-heroe',
@@ -12,8 +13,8 @@ export class HeroeComponent implements OnInit {
               private _heroesService: HeroesService) { 
 
     this.activatedRoute.params.subscribe(params => {
-      console.log(params['id']);
       this.heroe = this._heroesService.getHeroe(params['id']);
+      console.log(this.heroe)
 
     })
   }
